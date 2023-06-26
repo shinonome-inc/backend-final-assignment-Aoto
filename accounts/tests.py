@@ -5,7 +5,7 @@ from django.urls import reverse
 User = get_user_model()
 
 
-class TestSignUpView(TestCase):
+class TestSignupView(TestCase):
     def setUp(self):
         self.url = reverse("accounts:signup")
 
