@@ -1,10 +1,20 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'base.css' %}">
 </head>
-<body>
 
+<body>
+  <div>
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+  </div>
 </body>
+
 </html>
